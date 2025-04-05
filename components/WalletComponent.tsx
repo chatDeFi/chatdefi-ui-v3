@@ -7,7 +7,7 @@ function Status() {
     const { wallet, status, error } = useWallet();
 
     if (status === "loading-error") {
-        return <div className="text-rose-500">Error: {error?.message}</div>;
+        return <div className="text-rose-500">Error: {error}</div>;
     }
 
     if (status === "in-progress") {
@@ -15,7 +15,7 @@ function Status() {
     }
 
     if (status === "loaded" && wallet) {
-        return <div className="text-emerald-600">Connected: {wallet.address}</div>;
+        return <div className="text-emerald-600">Connected: {wallet.getAddress()}</div>;
     }
 
     return <div className="text-zinc-400">Wallet not connected</div>;
