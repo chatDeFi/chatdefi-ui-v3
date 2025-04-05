@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChatDeFi UI Agent
+
+This is the user interface for the ChatDeFi agent, built with [Next.js](https://nextjs.org).
+
+It integrates [Crossmint Client-Side Wallets](https://docs.crossmint.com/wallets/quickstarts/client-side-wallets) to handle user authentication and wallet management directly within the frontend application.
 
 ## Getting Started
 
